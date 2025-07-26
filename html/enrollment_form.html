@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enrollment Form</title>
+<link rel="stylesheet" href="../css/enrollment_form.css">
+</head>
+    <body>
+        <div class="container">
+            <form id="payment-form" action="" autocomplete="off">
+                <h1 class="main_header">Enrollment Form</h1>
+
+                    <p>Required fields are followed by *</p>
+
+                    <h2>Contact Information</h2>
+
+                    <p>
+                        Name: * <input type="text" name="name" required placeholder="Enter your name">
+                    </p>
+
+                    <p>
+                        Date of Birth: * <input type="date" title="dob" name="dob" id="dob" required>
+                    </p>
+
+                    <fieldset>
+                        <legend>Gender *</legend>
+                            <p>
+                            <input type="radio" title="gender" name="gender" id="male" required> Male
+                            <input type="radio" title="gender" name="gender" id="female" required> Female
+                            </p>
+                    </fieldset>
+
+                    <p>
+                        Address: <textarea name="address" id="address" cols="45" rows="7" placeholder="Enter your address"></textarea>
+                    </p>
+
+                    <p>
+                        Email: * <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+                    </p>
+
+                    <p>
+                        Password: * <input type="password" name="password" id="password" required placeholder="example123#">
+                    </p>
+
+                    <h2>Payment Information</h2>
+                        <p>
+                            Payment methods: *
+                            <select title="payment_method" name="payment_method" id="payment_method" required>
+                            <option value="">--Select a payment method--</option>
+                            <option value="eSewa">eSewa</option>
+                            <option value="Khalti">Khalti</option>
+                            <option value="Bank_Transfer">Bank Transfer</option>
+                            </select>
+                        </p>
+                    <p>
+                        Account Number: * <input type="number" name="account_number" id="account_number" required placeholder="98/97********">
+                    </p>
+
+                    <p>
+                        Account holder's Name: * <input type="text" name="A/C holder's name" required placeholder="Enter the name">
+                    </p>
+
+                    <p>
+                        Course: *
+                        <select title="course_type" name="course_type" id="course_type" required>
+                        <option value="">--Select your course--</option>
+                        <option value="IT_course">IT course (Rs.15,000)</option>
+                        <option value="NEB_+2_course">NEB +2 course (Rs.8,000)</option>
+                        <option value="NEB_SEE_course">NEB SEE course (Rs.5,000)</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        MVPIN: * <input type="password" name="mvpin" id="mvpin" required placeholder="1234">
+                    </p>
+
+                    <input type="submit" value="Pay Now">
+
+            </form>
+        </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("payment-form");
+        form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Enrollment successful! Thank you for choosing LeARN!");
+        form.reset();
+        });
+        });
+    </script>
+    </body>
+    </html>

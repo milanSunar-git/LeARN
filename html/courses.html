@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LeARN</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
+    
+    <style>
+        
+/* Reseting default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f0f4ff, #dbe9ff);
+    color: #777;
+    padding: 20px;
+}
+
+
+/* Header section */
+header {
+    background-color: royalblue;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Navigation bar */
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+
+  /* On hover: change text background color */
+  .navbar a:hover {
+    color: white;
+    background-color: royalblue;
+    border-radius: 5px;
+  }
+
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+
+/* Courses section */
+.courses {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.courses h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: royalblue;
+    text-align: center;
+}
+
+.courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.courses ul li {
+    background-color: #f7faff;
+    border-left: 5px solid royalblue;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: royalblue;
+}
+        ul li{
+            
+            font-size: 150%;
+            border: 1px solid black;
+         }
+
+    /*Enrollment*/
+
+    .enroll {
+    text-decoration:none;
+    font-weight:bolder;
+    font-size: larger;        
+    background: royalblue;
+    box-sizing:border-box;
+    border: 2px solid #fff;
+    color: rgb(255, 255, 255);
+    padding:  5px 10px 10px 10px;
+    cursor: pointer;
+    margin: 1px 1px 20px 1px;
+    border-radius: 5px;
+    text-align:center;
+    margin-top:3%;
+    display:flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap:wrap;
+}
+
+    .enroll:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Our Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html" target="_blank">Home</a></li>
+                <li><a href="../html/courses.html">Courses</a></li>
+                <li><a href="../html/instructors.html" target="_blank">Instructors</a></li>
+                <li><a href="../html/resources.html" target="_blank">Student Resources</a></li>
+                <li><a href="../html/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="courses">
+        <h2>Available Courses</h2>
+        <ul style="list-style-type: none;">
+            <li><strong><h1>IT courses</h1>(By Aman Dhattarwal and Shradha Khapra)</strong><br>Learn HTML, CSS, JavaScript, C, C++, Java, PHP <br>and other programming languages. <br>Including Networking, IoT, Database, Cybersecurity, AI,<br> Blockchain technology, Data Science and Web development courses<br>
+                <a href="../html/instructors.html" class="main-btn" target="_blank">Meet Our Instructors</a>
+            </li>
+
+            <li><strong><h1>NEB +2 courses</h1>(By Alakh Pandey and Aman Dhattarwal) </strong><br>Maths, Computer Science, <br>Physics, Chemistry, Biology, <br>Account, Business, Econimics, English, Nepali<br><a href="instructors.html" class="main-btn" target="_blank">Meet Our Instructors</a>
+            </li>
+
+            <li><strong><h1>NEB SEE courses</h1>(By Alakh Pandey, Aman Dhattarwal, Shradha Khapra)</strong><br>Science, C.Maths, Computer,<br>O.Maths, Econimics, Social, English, Nepali
+            <br><a href="../html/instructors.html" class="main-btn" target="">Meet Our Instructors</a>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="enroll">
+        <a href="../html/enrollment_form.html" target="_blank" class="enroll">Enroll Now</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LeARN.</p>
+    </footer>
+</body>
+</html>

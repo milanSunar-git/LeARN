@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeARN</title>
+<link rel="stylesheet" href="../css/styles.css">
+<script defer src="../js/script.js"></script>
+</head>
+    <body>
+
+    <!--Header Section-->
+
+
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/courses.html" target="_blank">Courses</a></li>
+                    <li><a href="../html/instructors.html" target="_blank">Instructors</a></li>
+                    <li><a href="../html/resources.html" target="_blank">Resources</a></li>
+                    <li><a href="../html/contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <!--Main Section-->
+
+
+
+        <section class="hero">
+            <img src="../images/LeARN logo.png" alt="" width="200">
+            <h2>Not Just Learning, LeARN-ing</h2>
+            <p>Craft your success with quality education at your fingertips.</p><br>
+            <a href="../html/courses.html" class="btn" target="_blank">View Courses</a>
+        </section>
+
+
+    <!--Courses Section-->
+
+
+
+        <section class="courses">
+            <h2 style="color: royalblue;">Featured Courses</h2>
+                <div class="course-list">
+                    <div class="course" onclick="showCourseDetails('IT courses', 'Learn HTML, CSS, JavaScript, C, C++, Java, PHP and other programming languages. Including Networking, Cybersecurity, AI, Blockchain technology, Data Science and Web development courses. Take your IT knowledge and productivity to the next level.')">
+                        <img src="../images/information-technology.jpg" alt="" height="60%" width="">
+                        <h3>IT courses</h3>
+                        <span class="fee"><P style="text-decoration: line-through;">Rs.20,000</P>Rs.15,000</span>
+                        <br> <br> <a href="../html/enrollment_form.html" target="_blank" class="enroll">Enroll Now</button></a>
+                    </div>
+
+                    <div class="course" onclick="showCourseDetails('NEB +2 courses', 'Maths, Computer Science, Physics, Chemistry, Biology, Account, Business, Econimics, English, Nepali (Class 11 and Class 12 courses for A+ results.)')">
+                        <img src="../images/NEB +2.png" alt="" height="60%">
+                        <h3>NEB +2 courses</h3>
+                        <span class="fee"><P style="text-decoration: line-through;">Rs.12,000</P>Rs.8,000</span>
+                        <br> <br> <a href="../html/enrollment_form.html" target="_blank" class="enroll">Enroll Now</button></a>
+                    </div>
+
+                    <div class="course" onclick="showCourseDetails('NEB SEE courses', 'Science, C.Maths, Computer, O.Maths, Econimics, Social, English, Nepali (Beautiful SEE package for A+ results.)')">
+                        <img src="../images/NEB SEE.png" alt="" height="60%">
+                        <h3>NEB SEE courses</h3>
+                        <span class="fee"><P style="text-decoration: line-through;">Rs.7,000</P>Rs.5,000</span>
+                        <br> <br> <a href="../html/enrollment_form.html" target="_blank" class="enroll">Enroll Now</button></a>
+                    </div>
+                </div>
+        </section>
+
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+
+    <!--Instructors Section-->
+
+
+
+    <br><br> <h2 style="text-align: center;">Meet Our Instructors</h2> <br>
+        <section class="instructors">
+                        <a href="../html/instructors.html" target="_blank">
+  <div class="instructor-list">
+    <div class="instructor">
+                <img src="../images/Alakh Pandey.jpeg" alt="Instructor 1" height="63%">
+      <h3>Alakh Pandey</h3>
+      <p>Expert Physics Teacher</p>
+    </div>
+    <div class="instructor">
+                <img src="../images/Shradha Khapra.jpeg" alt="Instructor 2" height="55%">
+      <h3>Shradha Khapra</h3>
+      <p>Coding Tutor</p>
+    </div>
+    <div class="instructor">
+                <img src="../images/Aman Dhattarwal.jpeg" alt="Instructor 3" width="100%" height="65%">
+      <h3>Aman Dhattarwal</h3>
+      <p>Computer Teacher</p>
+    </div>
+  </div>
+  </a>
+</section>
+
+
+    <!--Testimonials Section-->
+
+
+
+    <section class="testimonials">
+    <br><h2>What Our Students Say</h2><br>
+        <div class="testimonial-slider">
+            <div class="testimonial active"><img src="../images/male student testimonials.jpeg" alt="" width="2.5%" height="2.5%"><sub>"This platform has completely transformed my learning experience! They provide useful and life-long concepts. Highly recommended."</sub></div>
+
+            <div class="testimonial"><img src="../images/female student testimonials.png" alt="" width="2.5%" height="2.5%"><sup>"Great instructors and excellent content. Love the interactive features. Course fee is also affordable and worth it!"</sup></div>
+
+            <div class="testimonial"><img src="../images/male1 student testimonials.jpeg" alt="" width="3.5%" height="3.5%"><sup>"The best online courses I have ever taken! Engaging and informative. Best courses for begineers and experts also."</sup></div>
+        </div>
+    </section>
+
+
+    <!--Contact Section-->
+
+
+
+    <section class="contact" style="margin-top: 50px;">
+    <h2>Contact Us</h2> <br><br>
+        <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="success-message" class="hidden">We need your feedback!</p>
+        </form>
+    </section>
+
+
+    <!--Footer Section-->
+
+
+    <footer>
+    <p>&copy; 2025 LeARN. All rights reserved.</p>
+        <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
